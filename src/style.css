@@ -1,0 +1,65 @@
+body {
+    font-family: "Reggae One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    max-width: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
+    position: fixed;
+    width: auto;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    background-image: url(./img/welcome.jpeg);
+
+    img {
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        width: 100vh;
+    }
+
+    h1 {
+        margin: 13vh 0 -2.6vh;
+        text-align: center;
+        font-size: 3rem;
+
+        color: hsl(48, 10%, 15%);
+        text-shadow: 0px 0px 10px #ced0d3,
+            5px 5px 5px #FFB650,
+            10px -10px 6px #FFD662,
+            -15px 15px 7px #FF80BF,
+            -20px -20px 8px #EF5097,
+            25px 25px 9px #6868AC,
+            30px -30px 10px #90B1E0;
+    }
+
+    h2 {
+        margin-bottom: 35.3vh;
+        font-size: 1rem;
+        color: antiquewhite;
+    }
+
+    p {
+        text-align: justify;
+        padding: 2vh;
+        width: 80%;
+        background-color: rgba(250, 235, 215, 0.7);
+        color: hsl(48, 10%, 10%);
+        line-height: 1.1rem;
+    }
+}
