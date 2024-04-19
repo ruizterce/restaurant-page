@@ -1,7 +1,12 @@
-body {
-    font-family: "Reggae One", system-ui;
+@font-face {
+    font-family: 'Reggae One';
+    src: url('./fonts/ReggaeOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+  }
+
+body {
+    font-family: 'Reggae One';
     max-width: max-content;
     margin: auto;
     display: flex;
