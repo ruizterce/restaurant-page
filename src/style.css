@@ -3,15 +3,30 @@
     src: url('./fonts/ReggaeOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 body {
+    --ivory: #FDFCEAff;
+    --alabaster: #F5F3E7ff;
+    --lion: #BD9D71ff;
+    --coyote: #756C4Dff;
+    --beaver: #95856Fff;
+    --caf-noir: #3D2A15ff;
+    --yellow: #FBFD00ff;
+    --yellow-green: #A2C702ff;
+    --avocado: #4D790Cff;
+    --dark-moss-green: #48640Eff;
+    --pakistan-green: #1D3305ff;
+
     font-family: 'Reggae One';
     max-width: max-content;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
+    background-color: var(--beaver);
+    background-image: linear-gradient(90deg, #f5f3e7 44.64%, #95856f 44.64%, #95856f 46.43%, #1d3305 46.43%, #1d3305 48.21%, #95856f 48.21%, #95856f 50%, #f5f3e7 50%, #f5f3e7 94.64%, #95856f 94.64%, #95856f 96.43%, #1d3305 96.43%, #1d3305 98.21%, #95856f 98.21%, #95856f 100%);
+    background-size: 56.00px 56.00px;
 }
 
 header {
@@ -30,6 +45,10 @@ header {
     height: 100vh;
     width: 100vh;
     background-image: url(./img/welcome.jpeg);
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
 
     img {
         position: absolute;
@@ -39,32 +58,36 @@ header {
     }
 
     h1 {
-        margin: 13vh 0 -2.6vh;
+        margin: 30vh 0 -2vh;
         text-align: center;
         font-size: 3rem;
+        
 
-        color: hsl(48, 10%, 15%);
-        text-shadow: 0px 0px 10px #ced0d3,
-            5px 5px 5px #FFB650,
-            10px -10px 6px #FFD662,
-            -15px 15px 7px #FF80BF,
-            -20px -20px 8px #EF5097,
-            25px 25px 9px #6868AC,
-            30px -30px 10px #90B1E0;
+        color: transparent;
+        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-position: left;
+
+
+
     }
 
     h2 {
-        margin-bottom: 35.3vh;
+        margin-bottom: 3vh;
         font-size: 1rem;
-        color: antiquewhite;
+        color: var(--alabaster);
+        text-shadow: 0px -2px 3px var(--avocado),
+        0px 3px 5px var(--caf-noir);
     }
 
     p {
         text-align: justify;
-        padding: 2vh;
-        width: 80%;
-        background-color: rgba(250, 235, 215, 0.7);
-        color: hsl(48, 10%, 10%);
+        text-indent: 40px;
+        margin: 0;
+        padding: 1vh;
+        width: 55%;
+        color: var(--caf-noir);
         line-height: 1.1rem;
     }
 }
