@@ -38,6 +38,36 @@ header {
     right: 10%;
     display: flex;
     justify-content: center;
+
+    nav{
+        display: flex;
+        button{
+            font-family: 'Reggae One';
+            color: var(--caf-noir);
+            background-color: var(--alabaster);
+            padding: 10px 30px;
+            border: solid #3d2a15 2px;
+            box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+            border-radius: 6px;
+            transition : padding 1000ms;
+            transform: translateY(0);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            }
+            
+            button:hover{
+            
+            transition : 1000ms;
+            padding: 10px 50px;
+            transform : translateY(-0px);
+            background-color: var(--ivory);
+            color: var(--pakistan-green);
+            border: solid 2px var(--pakistan-green);
+            }
+    }
 }
 
 #content {
@@ -48,7 +78,6 @@ header {
     width: 100vh;
     background-image: url(./img/welcome.jpeg);
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
     background-size: cover;
 
