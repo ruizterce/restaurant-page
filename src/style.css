@@ -120,7 +120,7 @@ header {
     }
 
     h1.menu {
-        margin: 20vh 0 5vh;
+        margin: 24vh 0 2vh;
         text-align: center;
         font-size: 4vh;
         color: transparent;
@@ -131,28 +131,34 @@ header {
     }
 
     div.menu#dishArea {
-        width: 55vh;
-        position: relative;
-        left: 5vh;
+        color:var(--caf-noir);
+        width: 52vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 0.5vh 3vh;
 
         .menu.dish {
             display: flex;
 
             .iconWrapper {
                 img {
-                    width: 9vh;
-                    height: 9vh;
+                    width: 8.5vh;
+                    height: 8.5vh;
+                    margin-right: 1.5vh;
+                    filter: invert(15%) sepia(13%) saturate(2020%) hue-rotate(351deg) brightness(95%) contrast(93%);
                 }
             }
 
             h4 {
                 margin: 0px;
+                font-size: 1.6vh;
             }
 
             p {
                 margin: 0px;
+                font-size:1.2vh;
+                line-height: 1.2vh;
+                text-align: left;
             }
         }
     }
