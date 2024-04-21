@@ -28,7 +28,7 @@ body {
     background-image: linear-gradient(90deg, #f5f3e7 44.64%, #95856f 44.64%, #95856f 46.43%, #1d3305 46.43%, #1d3305 48.21%, #95856f 48.21%, #95856f 50%, #f5f3e7 50%, #f5f3e7 94.64%, #95856f 94.64%, #95856f 96.43%, #1d3305 96.43%, #1d3305 98.21%, #95856f 98.21%, #95856f 100%);
     background-size: 56.00px 56.00px;
     box-shadow: 3px 0px 5px var(--caf-noir),
-    -3px 0px 5px var(--caf-noir);
+        -3px 0px 5px var(--caf-noir);
 }
 
 header {
@@ -39,11 +39,12 @@ header {
     display: flex;
     justify-content: center;
 
-    nav{
+    nav {
         width: 70vh;
         display: flex;
         justify-content: space-between;
-        button{
+
+        button {
             font-family: 'Reggae One';
             font-size: 1.8vh;
             font-weight: 500;
@@ -53,24 +54,24 @@ header {
             border: solid #3d2a15 3px;
             box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
             border-radius: 6px;
-            transition : padding 1000ms;
+            transition: padding 1000ms;
             transform: translateY(0);
             display: flex;
             flex-direction: row;
             align-items: center;
             cursor: pointer;
             text-transform: uppercase;
-            }
-            
-            button:hover{
-            
-            transition : 1000ms;
+        }
+
+        button:hover {
+
+            transition: 1000ms;
             padding: 1.6vh 7vh;
-            transform : translateY(-0px);
+            transform: translateY(-0px);
             background-color: var(--ivory);
             color: var(--pakistan-green);
             border: solid 3px var(--pakistan-green);
-            }
+        }
     }
 }
 
@@ -92,12 +93,10 @@ header {
         width: 100vh;
     }
 
-    h1 {
+    h1.home {
         margin: 30vh 0 -2vh;
         text-align: center;
         font-size: 5.5vh;
-        
-
         color: transparent;
         background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
         background-clip: text;
@@ -108,15 +107,15 @@ header {
 
     }
 
-    h2 {
+    h2.home {
         margin-bottom: 3vh;
         font-size: 1.7vh;
         color: var(--alabaster);
         text-shadow: 0px -2px 3px var(--avocado),
-        0px 3px 5px var(--caf-noir);
+            0px 3px 5px var(--caf-noir);
     }
 
-    p {
+    p.home {
         font-size: 1.6vh;
         text-align: justify;
         text-indent: 6vh;
