@@ -40,13 +40,17 @@ header {
     justify-content: center;
 
     nav{
+        width: 70vh;
         display: flex;
+        justify-content: space-between;
         button{
             font-family: 'Reggae One';
+            font-size: 1.8vh;
+            font-weight: 500;
             color: var(--caf-noir);
             background-color: var(--alabaster);
-            padding: 10px 30px;
-            border: solid #3d2a15 2px;
+            padding: 1.6vh 5vh;
+            border: solid #3d2a15 3px;
             box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
             border-radius: 6px;
             transition : padding 1000ms;
@@ -61,11 +65,11 @@ header {
             button:hover{
             
             transition : 1000ms;
-            padding: 10px 50px;
+            padding: 1.6vh 7vh;
             transform : translateY(-0px);
             background-color: var(--ivory);
             color: var(--pakistan-green);
-            border: solid 2px var(--pakistan-green);
+            border: solid 3px var(--pakistan-green);
             }
     }
 }
