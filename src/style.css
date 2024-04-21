@@ -86,13 +86,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-    img {
-        position: absolute;
-        z-index: -1;
-        height: 100vh;
-        width: 100vh;
-    }
-
     h1.home {
         margin: 30vh 0 -2vh;
         text-align: center;
@@ -124,5 +117,43 @@ header {
         width: 55%;
         color: var(--caf-noir);
         line-height: 1.8vh;
+    }
+
+    h1.menu {
+        margin: 20vh 0 5vh;
+        text-align: center;
+        font-size: 4vh;
+        color: transparent;
+        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-position: left;
+    }
+
+    div.menu#dishArea {
+        width: 55vh;
+        position: relative;
+        left: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .menu.dish {
+            display: flex;
+
+            .iconWrapper {
+                img {
+                    width: 9vh;
+                    height: 9vh;
+                }
+            }
+
+            h4 {
+                margin: 0px;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
     }
 }
