@@ -131,7 +131,7 @@ header {
     }
 
     div.menu#dishArea {
-        color:var(--caf-noir);
+        color: var(--caf-noir);
         width: 52vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -156,7 +156,54 @@ header {
 
             p {
                 margin: 0px;
-                font-size:1.2vh;
+                font-size: 1.2vh;
+                line-height: 1.2vh;
+                text-align: left;
+            }
+        }
+    }
+
+    h1.about {
+        margin: 24vh 0 0;
+        text-align: center;
+        font-size: 4vh;
+        color: transparent;
+        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-position: left;
+    }
+
+    div.about#chefArea {
+        color: var(--caf-noir);
+        width: 50vh;
+
+        .about.chef {
+            display: flex;
+            margin: 1vh 0;
+
+            .iconWrapper {
+                img {
+                    width: 12vh;
+                    height: 12vh;
+                    margin-right: 1.5vh;
+                    
+                }
+            }
+
+            h3{
+                margin: 0px;
+                font-size: 2vh;
+            }
+
+            h4 {
+                margin: 0px;
+                font-size: 1.6vh;
+            }
+
+            p {
+                margin: 0px;
+                font-size: 1.2vh;
                 line-height: 1.2vh;
                 text-align: left;
             }
