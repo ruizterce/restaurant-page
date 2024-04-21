@@ -1,5 +1,7 @@
-const load = () => {
+const loadHome = () => {
     const contentDiv = document.querySelector('#content')
+
+    contentDiv.innerHTML = '';
 
     const h1Div = document.createElement('h1');
     h1Div.textContent = 'Yuzu Blossom';
@@ -27,4 +29,4 @@ const load = () => {
     contentDiv.appendChild(p2Div);
 };
 
-export { load as default }
+export { loadHome as default }

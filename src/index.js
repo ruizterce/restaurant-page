@@ -1,4 +1,6 @@
 import './style.css';
-import load from "./load.js";
+import loadHome from "./loadHome.js";
 
-load();
+loadHome();
+
+
