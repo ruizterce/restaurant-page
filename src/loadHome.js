@@ -4,12 +4,16 @@ const loadHome = () => {
     contentDiv.innerHTML = '';
 
     const h1Div = document.createElement('h1');
+    h1Div.className = 'home';
     h1Div.textContent = 'Yuzu Blossom';
 
+
     const h2Div = document.createElement('h2');
+    h2Div.className = 'home';
     h2Div.textContent = 'Japanese Fusion Cuisine';
 
     const p1Div = document.createElement('p');
+    p1Div.className = 'home';
     p1Div.textContent = `Welcome to Yuzu Blossom, where culinary innovation meets traditional Japanese craftsmanship. Nestled in the
     heart of Granada, Spain, our restaurant invites you on a gastronomic adventure like no other. From the
     moment
@@ -17,6 +21,7 @@ const loadHome = () => {
     of flavors.`;
 
     const p2Div = document.createElement('p');
+    p2Div.className = 'home';
     p2Div.textContent = `Our menu is a testament to our dedication to excellence, blending the finest ingredients with creative flair
     to create a dining experience that's both familiar and exhilaratingly new. Whether you're craving the
     delicate balance of sushi rolls infused with unexpected ingredients, or the robust umami of our signature
