@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     align-content: center;
     background-color: var(--beaver);
-    background-image: linear-gradient(90deg, #f5f3e7 44.64%, #95856f 44.64%, #95856f 46.43%, #1d3305 46.43%, #1d3305 48.21%, #95856f 48.21%, #95856f 50%, #f5f3e7 50%, #f5f3e7 94.64%, #95856f 94.64%, #95856f 96.43%, #1d3305 96.43%, #1d3305 98.21%, #95856f 98.21%, #95856f 100%);
+    background-image: linear-gradient(90deg, var(--alabaster) 44.64%, var(--beaver) 44.64%, var(--beaver) 46.43%, var(--pakistan-green) 46.43%, var(--pakistan-green) 48.21%, var(--beaver) 48.21%, var(--beaver) 50%, var(--alabaster) 50%, var(--alabaster) 94.64%, var(--beaver) 94.64%, var(--beaver) 96.43%, var(--pakistan-green) 96.43%, var(--pakistan-green) 98.21%, var(--beaver) 98.21%, var(--beaver) 100%);
     background-size: 56.00px 56.00px;
     box-shadow: 3px 0px 5px var(--caf-noir),
         -3px 0px 5px var(--caf-noir);
@@ -34,6 +34,7 @@ body {
 header {
     position: fixed;
     width: auto;
+    top: 1.6vh;
     left: 10%;
     right: 10%;
     display: flex;
@@ -50,7 +51,7 @@ header {
             font-weight: 500;
             color: var(--caf-noir);
             background-color: var(--alabaster);
-            padding: 1.6vh 5vh;
+            padding: 1.3vh 5vh;
             border: solid #3d2a15 3px;
             box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
             border-radius: 6px;
@@ -66,7 +67,7 @@ header {
         button:hover {
 
             transition: 1000ms;
-            padding: 1.6vh 7vh;
+            padding: 1.3vh 7vh;
             transform: translateY(-0px);
             background-color: var(--ivory);
             color: var(--pakistan-green);
@@ -86,26 +87,31 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-    h1.home {
-        margin: 30vh 0 -2vh;
+    h1 {
         text-align: center;
         font-size: 5.5vh;
-        color: transparent;
-        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-position: left;
+        color: var(--ivory);
+        padding: 0 2.5vh;
+        border-radius: 6vh;
+        background-image: url('./img/pattern.jpeg');
+        background-size: 60vh 60vh;
+        background-position: 40% 60%;
+        text-shadow: 0px 0px 8px var(--caf-noir);
+    }
 
-
+    h1.home {
+        margin: 29vh 0 -2.4vh;
 
     }
 
     h2.home {
-        margin-bottom: 3vh;
+        margin-bottom: 1vh;
         font-size: 1.7vh;
         color: var(--alabaster);
-        text-shadow: 0px -2px 3px var(--avocado),
-            0px 3px 5px var(--caf-noir);
+        background-color: var(--caf-noir);
+        opacity: 90%;
+        border-radius: 1.7vh;
+        padding: 0vh 1vh;
     }
 
     p.home {
@@ -121,13 +127,6 @@ header {
 
     h1.menu {
         margin: 24vh 0 2vh;
-        text-align: center;
-        font-size: 4vh;
-        color: transparent;
-        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-position: left;
     }
 
     div.menu#dishArea {
@@ -164,46 +163,41 @@ header {
     }
 
     h1.about {
-        margin: 24vh 0 0;
-        text-align: center;
-        font-size: 4vh;
-        color: transparent;
-        background-image: conic-gradient(from 95.2deg at 35% 90%, var(--alabaster), var(--caf-noir), var(--avocado));
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-position: left;
+        margin: 24vh 0 0vh;
     }
 
     div.about#chefArea {
+        position: relative;
+        left: 1vh;
         color: var(--caf-noir);
-        width: 50vh;
+        width: 55vh;
 
         .about.chef {
             display: flex;
-            margin: 1vh 0;
+            margin: 0.7vh 0;
 
             .iconWrapper {
                 img {
                     width: 12vh;
                     height: 12vh;
                     margin-right: 1.5vh;
-                    
+
                 }
             }
 
-            h3{
-                margin: 0px;
-                font-size: 2vh;
+            h3 {
+                margin: 0 0 -0.3vh;;
+                font-size: 2.3vh;
             }
 
             h4 {
                 margin: 0px;
-                font-size: 1.6vh;
+                font-size: 1.8vh;
             }
 
             p {
                 margin: 0px;
-                font-size: 1.2vh;
+                font-size: 1.3vh;
                 line-height: 1.2vh;
                 text-align: left;
             }
